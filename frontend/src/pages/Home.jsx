@@ -33,10 +33,7 @@ function Home() {
       const searchResults = await searchMovies(searchQuery);
       setMovies(searchResults);
       setError(null);
-    } catch (err) {
-      setError("Failed to search movies...");
-    } finally {
-      setLoading(false);
+   
     }
     setSearchQuery("");
   };
